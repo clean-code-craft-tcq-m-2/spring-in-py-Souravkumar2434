@@ -35,9 +35,9 @@ class StatsAlerter:
     def __init__(self, maxThreshold, Alert):
       self.maxThreshold = maxThreshold
       self.Alert = Alert
-    def checkAndAlert(lis):
+    def checkAndAlert(self,lis):
       for i in lis:
-        if i > maxThreshold:
+        if i > self.maxThreshold:
           print("True")
 
 if __name__ == "__main__":
