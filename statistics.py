@@ -9,3 +9,4 @@ def calculateStats(numbers):
   else:
     print("Input is empty")
   return dic
+
