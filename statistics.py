@@ -1,11 +1,11 @@
 
 def calculateStats(numbers):
-  avg, max_num, min_num = 0,0,0
+   dic = {"avg" : 0, "max" : 0, "min" : 0}
   if len(numbers) != 0:
     num_sum = sum(numbers)
-    avg = num_sum / len(numbers)
-    max_num = max(numbers)
-    min_num = min(numbers)
+    dic["avg"] = num_sum / len(numbers)
+    dic["max"] = max(numbers)
+    dic["min"] = min(numbers)
   else:
     print("Input is empty")
-  return avg, max_num, min_num
+  return dic
