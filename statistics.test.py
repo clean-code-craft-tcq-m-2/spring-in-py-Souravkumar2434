@@ -38,11 +38,7 @@ class StatsAlerter:
     def checkAndAlert(lis):
       for i in lis:
         if i > maxThreshold:
-          self.Alert[0] = True
-          self.Alert[1] = True
-        else:
-          self.Alert[0] = False
-          self.Alert[1] = False
+          print("True")
 
 if __name__ == "__main__":
   unittest.main()
