@@ -33,8 +33,8 @@ class LEDAlert:
 
 class StatsAlerter:
     def __init__(self, maxThreshold, Alert):
-    self.maxThreshold = maxThreshold
-    self.Alert = Alert
+      self.maxThreshold = maxThreshold
+      self.Alert = Alert
     def checkAndAlert(lis):
       for i in lis:
         if i > maxThreshold:
