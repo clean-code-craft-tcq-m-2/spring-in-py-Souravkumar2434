@@ -31,5 +31,27 @@ def EmailAlert():
 def LEDAlert():
   return True
 
+
+def StatsAlerter(maxThreshold, Alert):
+  def checkAndAlert(lis):
+    for i in lis:
+      if i > maxThreshold:
+        return True
+      else:
+        return False
+  if(Alert[0] == True):
+    emailSent = True
+  else:
+    emailSent = False
+  if(Alert[1] == True):
+    ledGlows = True
+  else:
+    ledGlows = False
+  return emailSent, ledGlows
+
+ 
+  
+  
+
 if __name__ == "__main__":
   unittest.main()
