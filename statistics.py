@@ -1,6 +1,6 @@
 
 def calculateStats(numbers):
-  avg, max, min = 0,0,0
+  avg, max_num, min_num = 0,0,0
   if len(numbers) != 0:
     num_sum = sum(numbers)
     avg = num_sum / len(numbers)
